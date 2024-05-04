@@ -1,5 +1,6 @@
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:bookly_app/core/utils/sizes.dart';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -10,7 +11,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-        horizontal: widthScreen * .03,
+        horizontal: widthScreen * .035,
         vertical: heightScreen * .05,
       ),
       child: Row(
@@ -24,7 +25,7 @@ class CustomAppBar extends StatelessWidget {
             onPressed: () {},
             icon: Icon(
               FontAwesomeIcons.magnifyingGlass,
-              size: heightScreen * .01,
+              size: heightScreen * .023,
             ),
           ),
         ],
