@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'package:bookly_app/res/sizes.dart';
+import 'package:bookly_app/res/theme_data.dart';
 import 'package:bookly_app/features/splash/presentation/views/splash_view.dart';
 
 void main() {
@@ -12,8 +14,11 @@ class BooklyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      home: SplashView(),
+    initializeHWFSize(context);
+
+    return GetMaterialApp(
+      theme: themeData(),
+      home: const SplashView(),
     );
   }
 }
