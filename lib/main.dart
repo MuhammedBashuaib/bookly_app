@@ -17,6 +17,7 @@ class BooklyApp extends StatelessWidget {
     initializeHWFSize(context);
 
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: themeData(),
       home: const SplashView(),
     );
