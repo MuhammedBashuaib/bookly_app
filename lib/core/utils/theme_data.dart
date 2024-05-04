@@ -1,4 +1,4 @@
-import 'package:bookly_app/res/color_app.dart';
+import 'package:bookly_app/core/utils/color_app.dart';
 import 'package:flutter/material.dart';
 
 ThemeData themeData() {
